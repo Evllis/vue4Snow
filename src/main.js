@@ -15,7 +15,10 @@ import './JS/FastClick'
 import filters from './JS/filter'
 import utils from './JS/utils'
 import VueScroller from 'vue-scroller'
-import { get, post } from './JS/ajax'
+import {
+    get,
+    post
+} from './JS/ajax'
 
 Vue.use(VueScroller)
 Vue.use(utils)
@@ -23,27 +26,30 @@ Vue.use(utils)
 Vue.prototype.$dialog = Dialog
 Vue.prototype.$loading = Loading
 Vue.prototype.$toast = toast
-Vue.prototype.$http = { get, post }
+Vue.prototype.$http = {
+    get,
+    post
+}
 
 // 注入全局过滤器
 Object.keys(filters).forEach(item => {
-  Vue.filter(item, filters[item])
+    Vue.filter(item, filters[item])
 })
 
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title
-  const userInfo = sessionStorage.getItem('userInfo') || null
-  if (!userInfo && to.meta.auth) {
-    next('/login')
-  } else {
-    next()
-  }
+    document.title = to.meta.title
+    const userInfo = sessionStorage.getItem('userInfo') || null
+    if (!userInfo && to.meta.auth) {
+        next('/login')
+    } else {
+        next()
+    }
 })
 
 export default new Vue({
-  el: '#app',
-  router,
-  render: h => h(App)
+    el: '#app',
+    router,
+    render: h => h(App)
 })

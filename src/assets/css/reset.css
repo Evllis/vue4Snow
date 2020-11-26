@@ -185,11 +185,13 @@ input.checkbox {
     height: 0;
 }
 
-div>img{
-  vertical-align: middle;
+div>img {
+    vertical-align: middle;
 }
-input, textarea{
-  -webkit-user-select: text!important;
-  user-select: text !important;
-  cursor: pointer
+
+input,
+textarea {
+    -webkit-user-select: text !important;
+    user-select: text !important;
+    cursor: pointer
 }
