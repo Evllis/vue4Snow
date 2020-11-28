@@ -1,26 +1,24 @@
 <template>
-    <div id="app">
-        <router-view v-if="!$route.meta.keepAlive"></router-view>
-        <keep-alive>
-            <router-view v-if="$route.meta.keepAlive"></router-view>
-        </keep-alive>
+    <div id="app" class="app">
+        <ys-header></ys-header>
+        <div class="page-content">
+            <router-view v-if="!$route.meta.keepAlive"></router-view>
+            <keep-alive>
+                <router-view v-if="$route.meta.keepAlive"></router-view>
+            </keep-alive>
+        </div>
+        <ys-footer></ys-footer>
     </div>
 </template>
 
 <script>
+
     export default {
-        name: 'App'
+        name: 'App',
     }
 </script>
 
 <style lang="less">
-#app {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
-    width: 100% !important;
-    height: 100%;
-    font-size: 16px;
-    background: #fff;
-    box-sizing: border-box;
-    text-align: center;
-}
+    @import './assets/css/reset.css';
+    @import './assets/css/common.less';
 </style>

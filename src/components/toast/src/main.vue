@@ -92,13 +92,13 @@ export default {
         return {
             showLittleTip: true,
             msg: '',
-            type: ''
+            type: '',
         }
     },
     mounted() {
         setTimeout(() => {
             this.showLittleTip = false
         }, 1500)
-    }
+    },
 }
 </script>

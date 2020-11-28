@@ -19,5 +19,5 @@ const formatTimer = function(val, hours) {
     }
 }
 export default {
-    formatTimer
+    formatTimer,
 }

@@ -7,7 +7,7 @@ import {
 /* 全局默认配置 */
 var http = axios.create({
     baseURL: baseApi,
-    timeout: 5000
+    timeout: 5000,
 })
 /* 请求拦截器 */
 http.interceptors.request.use(
@@ -58,7 +58,7 @@ function get(url, data, loading) {
 function post(url, data, loading) {
     return new Promise((resolve, reject) => {
         http.post(url, data, {
-                loading: loading
+                loading: loading,
             }).then(
                 response => {
                     resolve(response.data)

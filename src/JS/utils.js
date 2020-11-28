@@ -97,7 +97,7 @@ export default {
                     71: '台湾',
                     81: '香港',
                     82: '澳门',
-                    91: '国外'
+                    91: '国外',
                 }
                 var Y, JYM
                 var S, M, ereg, Err
@@ -188,7 +188,7 @@ export default {
                     'm+': date.getMinutes(),
                     's+': date.getSeconds(),
                     'q+': Math.floor((date.getMonth() + 3) / 3),
-                    S: date.getMilliseconds()
+                    S: date.getMilliseconds(),
                 }
                 if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length))
                 for (var k in o) {
@@ -352,7 +352,7 @@ export default {
                         fn.apply(th, args)
                     }
                 }
-            }
+            },
         }
-    }
+    },
 }

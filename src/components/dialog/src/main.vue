@@ -69,7 +69,7 @@ export default {
             cancel: null,
             row: 3,
             list: [],
-            textLeft: false
+            textLeft: false,
         }
     },
     methods: {
@@ -80,11 +80,11 @@ export default {
         confirmClick() {
             this.showDialog = false
             this.confirm(this.content)
-        }
+        },
     },
     mounted() {
         this.maxLength = this.length ? this.length : 20
-    }
+    },
 }
 /*  使用例子 只有type = input 时是有输入框的
     this.$dialog({

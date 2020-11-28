@@ -14,7 +14,7 @@
 
 <script>
     export default {
-        name: 'skeleton'
+        name: 'skeleton',
     }
 </script>
 

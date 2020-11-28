@@ -14,6 +14,13 @@ module.exports = {
         'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'indent': ['off', 2],
-        'space-before-function-paren': ['error', 'never']
+        'space-before-function-paren': ['error', 'never'],
+        'comma-dangle': ['error', {
+            'arrays': 'never',
+            "objects": 'always',
+            'imports': 'never',
+            'exports': 'never',
+            'functions': 'never'
+        }],
     }
 }

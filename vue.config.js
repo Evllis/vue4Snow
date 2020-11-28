@@ -40,13 +40,6 @@ module.exports = {
         sourceMap: true,
         // css预设器配置项
         loaderOptions: {
-            postcss: {
-                plugins: [
-                    require('postcss-px2rem')({
-                        remUnit: 100
-                    })
-                ]
-            }
         },
         // 启用 CSS modules for all css / pre-processor files.
         requireModuleExtension: false
@@ -126,9 +119,13 @@ module.exports = {
 
     devServer: {
         host: '0.0.0.0',
+        hot: true,
+        hotOnly: true,
         port: 8088, // 端口号
         https: false, // https:{type:Boolean}
         open: false, // 配置自动启动浏览器  open: 'Google Chrome'-默认启动谷歌
+        compress: true,
+        disableHostCheck: true,
 
         // 配置多个代理
         proxy: {

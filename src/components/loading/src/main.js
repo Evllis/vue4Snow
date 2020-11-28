@@ -8,7 +8,7 @@ const Loading = {
     show(options) {
         options = options || {}
         instance = new LoadingConstructor({
-            data: options
+            data: options,
         })
         instance.vm = instance.$mount()
         document.body.appendChild(instance.vm.$el)
@@ -18,6 +18,6 @@ const Loading = {
         if (instance) {
             instance.vm.loading = false
         }
-    }
+    },
 }
 export default Loading

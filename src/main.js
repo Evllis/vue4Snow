@@ -2,8 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import './assets/css/reset.css'
-import './assets/css/common.css'
 import './components/icon/index'
 
 import Dialog from './components/dialog'
@@ -20,6 +18,9 @@ import {
     post
 } from './JS/ajax'
 
+// 加载全局组件
+import './components'
+
 Vue.use(VueScroller)
 Vue.use(utils)
 
@@ -28,7 +29,7 @@ Vue.prototype.$loading = Loading
 Vue.prototype.$toast = toast
 Vue.prototype.$http = {
     get,
-    post
+    post,
 }
 
 // 注入全局过滤器
@@ -51,5 +52,5 @@ router.beforeEach((to, from, next) => {
 export default new Vue({
     el: '#app',
     router,
-    render: h => h(App)
+    render: h => h(App),
 })

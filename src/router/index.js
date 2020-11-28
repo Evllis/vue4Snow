@@ -7,28 +7,28 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: () => import('../views/Home.vue'),
+        component: () => import('../views/home/home.vue'),
         meta: {
             title: '首页',
-            keepAlive: false
-        }
+            keepAlive: false,
+        },
     },
     {
         path: '/about',
-        name: 'About',
-        component: () => import('../views/About.vue'),
+        name: 'about',
+        component: () => import('../views/about/about.vue'),
         meta: {
             title: '其他',
-            keepAlive: false
-        }
+            keepAlive: false,
+        },
     }
 ]
 
 const router = new VueRouter({
     routes,
     scrollBehavior: () => ({
-        y: 0
-    })
+        y: 0,
+    }),
 })
 
 export default router

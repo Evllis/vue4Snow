@@ -19,9 +19,9 @@ export default {
     data() {
         return {
             loading: true,
-            tip: '正在加载'
+            tip: '正在加载',
         }
-    }
+    },
 }
 </script>
 

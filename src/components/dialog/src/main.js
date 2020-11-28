@@ -7,7 +7,7 @@ let instance
 const Dialog = function(options) {
     options = options || {}
     instance = new DialogConstructor({
-        data: options
+        data: options,
     })
     instance.vm = instance.$mount()
     document.body.appendChild(instance.vm.$el)
