@@ -1,0 +1,58 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.tabs {
+  height: 44px;
+  background-color: #F2EEED;
+  padding-left: 89px;
+}
+.tabs .swiper-container {
+  height: 100%;
+}
+.tabs .swiper-wrapper .swiper-slide {
+  height: 15px;
+  line-height: 15px;
+  top: 11px;
+  margin-right: 20px;
+}
+.tabs .swiper-wrapper .swiper-slide:nth-child(1),
+.tabs .swiper-wrapper .swiper-slide:nth-child(5),
+.tabs .swiper-wrapper .swiper-slide:nth-child(6),
+.tabs .swiper-wrapper .swiper-slide:nth-child(7) {
+  width: 62px;
+}
+.tabs .swiper-wrapper .swiper-slide:nth-child(2),
+.tabs .swiper-wrapper .swiper-slide:nth-child(3),
+.tabs .swiper-wrapper .swiper-slide:nth-child(4),
+.tabs .swiper-wrapper .swiper-slide:nth-child(8) {
+  width: 47px;
+}
+.tabs .swiper-wrapper .swiper-slide:nth-child(9) {
+  width: 32px;
+}
+.tabs .swiper-wrapper .swiper-slide:last-child {
+  margin-right: 0;
+}
+.tabs .swiper-wrapper .swiper-slide a {
+  font-size: 15px;
+  color: #505050;
+  font-weight: bold;
+  position: relative;
+}
+.tabs .swiper-wrapper .swiper-slide a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #198FCF;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+.tabs .swiper-wrapper .swiper-slide a.router-link-exact-active::before {
+  transform: scale(1);
+}

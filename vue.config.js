@@ -11,7 +11,7 @@ function resolve(dir) {
 }
 module.exports = {
 
-    publicPath: './',
+    publicPath: '/',
 
     // 将构建好的文件输出到哪里
     outputDir: 'dist/static',
@@ -86,7 +86,7 @@ module.exports = {
             minimize: true,
             quiet: true,
             router: {
-                mode: 'hash',
+                mode: 'history',
                 routes: [{
                         path: '/',
                         skeletonId: 'skeleton1'

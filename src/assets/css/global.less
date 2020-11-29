@@ -318,6 +318,31 @@
     }
 }
 
+// background
+.bg(@bg: white) {
+    background-color: @bg;
+}
+
+// padding-left
+.pl(@value: 0) {
+    padding-left: @value;
+}
+
+// padding-right
+.pr(@value: 0) {
+    padding-right: @value;
+}
+
+// margin-left
+.ml(@value: 0) {
+    margin-left: @value;
+}
+
+// margin-right
+.mr(@value: 0) {
+    margin-right: @value;
+}
+
 // Alpha background
 // -------------------------
 .alpha-background(@rgb: #000, @alpha: .5) {
@@ -463,4 +488,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+}
+
+// position element方向
+.pos(
+    @directionOne: left, @directionOneNum: 0,
+    @directionTwo: top, @directionTwoNum: 0) {
+    position: absolute;
+    @{directionOne}: @directionOneNum;
+    @{directionTwo}: @directionTwoNum;
 }

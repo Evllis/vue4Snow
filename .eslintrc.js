@@ -5,22 +5,16 @@ module.exports = {
     },
     extends: [
         'plugin:vue/essential',
-        '@vue/standard'
+        // '@vue/standard'
     ],
     parserOptions: {
-        parser: 'babel-eslint'
+        // parser: 'babel-eslint'
     },
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'indent': ['off', 2],
         'space-before-function-paren': ['error', 'never'],
-        'comma-dangle': ['error', {
-            'arrays': 'never',
-            "objects": 'always',
-            'imports': 'never',
-            'exports': 'never',
-            'functions': 'never'
-        }],
+        'comma-dangle': 0
     }
 }

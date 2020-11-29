@@ -1,12 +1,12 @@
 <template>
-    <div class="footer">
-        底部
+    <div class="icesnow">
+
     </div>
 </template>
 
 <script>
     export default {
-        name: 'ys-footer',
+        name: 'icesnow',
         data() {
             return {
 

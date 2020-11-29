@@ -1,6 +1,12 @@
 import Vue from 'vue'
+// import Navigation from 'vue-navigation'
 import App from './App.vue'
+// import Router from 'vue-router'
 import router from './router'
+import store from './store'
+
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+// import 'swiper/swiper-bundle.css'
 
 import './components/icon/index'
 
@@ -40,6 +46,9 @@ Object.keys(filters).forEach(item => {
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
+    if (to.path !== '/home' && from.path === '/') {
+        router.replace('/home')
+    }
     document.title = to.meta.title
     const userInfo = sessionStorage.getItem('userInfo') || null
     if (!userInfo && to.meta.auth) {
@@ -49,8 +58,14 @@ router.beforeEach((to, from, next) => {
     }
 })
 
-export default new Vue({
-    el: '#app',
-    router,
-    render: h => h(App),
-})
+// Vue.use(Navigation, { router, })
+Vue.use(VueAwesomeSwiper)
+
+export default new Vue(
+    {
+        el: '#app',
+        router,
+        store,
+        render: h => h(App),
+    }
+)

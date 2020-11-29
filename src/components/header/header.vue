@@ -15,6 +15,7 @@
 <script>
 export default {
     name: 'ys-header',
+    props: [],
     data() {
         return {}
     },

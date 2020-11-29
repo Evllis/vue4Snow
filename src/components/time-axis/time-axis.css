@@ -1,0 +1,181 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.time-axis {
+  flex: 1;
+  width: 100%;
+  background-image: url('image/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.time-axis .time-wrap {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.time-axis .time-wrap .line {
+  width: 100%;
+  height: 2px;
+  background-color: #00DEFF;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+.time-axis .time-wrap .list {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 12px 5px 14px 5px;
+  width: 100%;
+  overflow: hidden;
+}
+.time-axis .time-wrap .list > .content {
+  display: flex;
+}
+.time-axis .time-wrap .list .item {
+  width: 94px;
+  color: #00DEFF;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.time-axis .time-wrap .list .item .date {
+  font-weight: bold;
+  width: 34px;
+  line-height: 18px;
+  height: 18px;
+  text-align: center;
+  margin-bottom: 26px;
+  position: relative;
+}
+.time-axis .time-wrap .list .item .date > span {
+  display: block;
+  transform: scale(0.9);
+  height: 17px;
+  line-height: 9px;
+  white-space: pre-wrap;
+}
+.time-axis .time-wrap .list .item .date::after,
+.time-axis .time-wrap .list .item .date::before {
+  content: "";
+  background-color: #00DEFF;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  transform: translate(-50%);
+  z-index: 1;
+}
+.time-axis .time-wrap .list .item .date::after {
+  width: 15px;
+  height: 15px;
+  opacity: 0.4;
+  bottom: -19px;
+}
+.time-axis .time-wrap .list .item .date::before {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  bottom: -16px;
+}
+.time-axis .time-wrap .list .item .info {
+  margin-left: 16px;
+  padding-left: 8px;
+  padding-bottom: 11px;
+  position: relative;
+  flex: 1;
+}
+.time-axis .time-wrap .list .item .info::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 1px;
+  height: 98%;
+  background-color: #00DEFF;
+}
+.time-axis .time-wrap .list .item .info .info-item {
+  padding-bottom: 13px;
+}
+.time-axis .time-wrap .list .item .info .info-item:last-child .info-item-details {
+  height: auto;
+}
+.time-axis .time-wrap .list .item .info .info-item .info-item-date {
+  font-weight: bold;
+  margin-bottom: 7px;
+  position: relative;
+  height: 8px;
+  line-height: 8px;
+}
+.time-axis .time-wrap .list .item .info .info-item .info-item-date::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: -13px;
+  top: -1px;
+  border-radius: 100%;
+  border: 1px solid #00DEFF;
+}
+.time-axis .time-wrap .list .item .info .info-item .info-item-date::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: -10px;
+  top: 2px;
+  border-radius: 100%;
+  background-color: #00DEFF;
+}
+.time-axis .time-wrap .list .item .info .info-item .info-item-date > span {
+  display: block;
+  margin-left: -3px;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.time-axis .time-wrap .list .item .info .info-item .info-item-details {
+  height: 23px;
+}
+.time-axis .time-wrap .list .item .info .info-item .info-item-details > div {
+  display: block;
+  color: white;
+  margin-left: -7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.time-axis .time-wrap .list .item .info .info-item .info-item-details > div p {
+  height: 11px;
+  line-height: 11px;
+  margin-bottom: 5px;
+  margin-top: -2px;
+}
+.time-axis .time-wrap .list .item .info .info-item .info-item-details > div p:last-child {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.time-axis .time-wrap .list .item .info .info-item:last-child {
+  padding-bottom: 0;
+}
+.time-axis .time-btn {
+  padding-top: 16px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+.time-axis .time-btn > a {
+  display: inline-block;
+  width: 75px;
+  height: 19px;
+  background-image: url('image/watch-live@2x.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
