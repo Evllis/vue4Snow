@@ -1,0 +1,80 @@
+@import '../../../assets/css/global.less';
+
+.media-live {
+    padding: 0 16px;
+    padding-top: 17px;
+    .videos-single {
+        .video-js {
+            border-radius: 10px;
+            video {
+                border-radius: 10px;
+            }
+            .vjs-control-bar {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+        .video-player {
+            .vjs-poster {
+                border-radius: 10px;
+            }
+        }
+    }
+    .more-btn {
+        padding-top: 28px;
+        text-align: center;
+        button {
+            width: 105px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 10px;
+            background-color: rgba(220, 220, 220, .79);
+            text-align: center;
+            font-size: 13px;
+            color: black;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            &:disabled {
+                color: #bbb;
+            }
+            .icon {
+                width: 0.3rem;
+                height: 0.3rem;
+                background-color: #fff;
+                border: 0 solid #319bef;
+                border-radius: 50%;
+                display: inline-block;
+                /* top: 0.22rem; */
+                position: relative;
+                margin-right: 6px;
+                /* left: 0.4rem; */
+                background-color: transparent;
+                &::before,
+                &::after {
+                    content: '';
+                    left: 0px;
+                    top: 0px;
+                    position: absolute;
+                    transition: all 0.3s linear;
+                    -o-transition: all 0.3s linear;
+                    -webkit-transition: all 0.3s linear;
+                    -moz-transition: all 0.3s ease;
+                }
+                &::after {
+                    width: 13px;
+                    height: 13px;
+                    top: -1px;
+                    left: -1px;
+                    border-radius: 50%;
+                    animation: rotation infinite linear 0.5s;
+                    transition: none;
+                    border-top: 1.5px solid transparent;
+                    border-left: 1.5px solid #fff;
+                    border-right: 1.5px solid transparent;
+                    border-bottom: 1.5px solid transparent;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}

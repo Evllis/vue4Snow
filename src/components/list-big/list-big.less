@@ -1,0 +1,246 @@
+@import '../../assets/css/global.less';
+
+.list-big {
+    .preview-title {
+        font-size: 16px;
+        color: white;
+        line-height: 16px;
+        height: 16px;
+        position: fixed;
+        left: 50%;
+        top: 18px;
+        transform: translateX(-50%);
+        z-index: 9999;
+        transition: all .5s ease;
+        opacity: 0;
+        font-weight: 500;
+        &.in {
+            opacity: 1;
+        }
+    }
+    .big-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 11px;
+        flex-wrap: wrap;
+    }
+    .big-item {
+        width: 168px;
+        border-radius: 10px;
+        .mt(15px);
+        .bg(white);
+        &:nth-child(1),
+        &:nth-child(2) {
+            .mt()
+        }
+        .cover {
+            display: flex;
+            height: 168px;
+            border-radius: 10px 10px 0 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            img {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                &:first-child {
+                    z-index: 1;
+                }
+            }
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            padding: 11px 8px 13px 8px;
+            .title {
+                font-size: 12px;
+                color: black;
+                height: 30px;
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 9px;
+                position: relative;
+                top: -2px;
+            }
+            .time {
+                font-size: 8px;
+                color: rgba(0, 0, 0, .53);
+                height: 7px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .more-btn {
+        padding-top: 11px;
+        text-align: center;
+        button {
+            width: 105px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 10px;
+            background-color: rgba(220, 220, 220, .79);
+            text-align: center;
+            font-size: 13px;
+            color: black;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            &:disabled {
+                color: #bbb;
+            }
+            .icon {
+                width: 0.3rem;
+                height: 0.3rem;
+                background-color: #fff;
+                border: 0 solid #319bef;
+                border-radius: 50%;
+                display: inline-block;
+                /* top: 0.22rem; */
+                position: relative;
+                margin-right: 6px;
+                /* left: 0.4rem; */
+                background-color: transparent;
+                &::before,
+                &::after {
+                    content: '';
+                    left: 0px;
+                    top: 0px;
+                    position: absolute;
+                    transition: all 0.3s linear;
+                    -o-transition: all 0.3s linear;
+                    -webkit-transition: all 0.3s linear;
+                    -moz-transition: all 0.3s ease;
+                }
+                &::after {
+                    width: 13px;
+                    height: 13px;
+                    top: -1px;
+                    left: -1px;
+                    border-radius: 50%;
+                    animation: rotation infinite linear 0.5s;
+                    transition: none;
+                    border-top: 1.5px solid transparent;
+                    border-left: 1.5px solid #fff;
+                    border-right: 1.5px solid transparent;
+                    border-bottom: 1.5px solid transparent;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+    .preview-toolbar {
+        position: fixed;
+        width: 100%;
+        right: 0;
+        bottom: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 9999;
+        transition: all 0.5s ease;
+        color: white;
+        font-size: 12px;
+        opacity: 0;
+        .preview-wrap {
+            padding-right: 24px;
+            display: flex;
+            align-items: center;
+        }
+        &.in {
+            opacity: 1;
+        }
+        .icon {
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .like {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 10px;
+            i {
+                width: 16px;
+                height: 14px;
+                background-image: url(./image/like@2x.png);
+            }
+            .num {
+                margin-left: 6px;
+            }
+        }
+        .share {
+            display: inline-flex;
+            align-items: center;
+            i {
+                width: 13px;
+                height: 15px;
+                background-image: url(./image/share@2x.png);
+            }
+        }
+    }
+}
+
+.pswp__counter {
+    position: fixed;
+    top: initial;
+    bottom: 21px;
+    left: 26px;
+    color: #777;
+    font-size: 16px;
+    opacity: 1;
+    height: 15px;
+    line-height: 15px;
+    padding: 0;
+}
+
+.pswp__caption {
+    bottom: 63px;
+}
+
+.pswp__caption__center {
+    padding: 0;
+    padding-left: 19px;
+    padding-right: 30px;
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    .source {
+        font-size: 12px;
+    }
+}
+
+.pswp__preloader {
+    display: none;
+}
+
+.pswp__button--close {
+    float: left;
+    opacity: 1;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

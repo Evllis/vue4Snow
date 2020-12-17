@@ -1,0 +1,24 @@
+@import '../../assets/css/global.less';
+
+.list-pic {
+    padding: 0 15px;
+    .pic-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .pic-item {
+            flex: 0 0 164px;
+            height: 104px;
+            .mt(10px);
+            &:nth-child(1),
+            &:nth-child(2) {
+                .mt();
+            }
+            a, img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

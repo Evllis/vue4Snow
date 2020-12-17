@@ -5,10 +5,18 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import VideoPlayer from 'vue-video-player'
+import preview from 'vue-photo-preview'
+
+import Swiper2, { Autoplay, Navigation, Pagination} from 'swiper'
+
+Swiper2.use([Autoplay, Navigation, Pagination])
+
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 // import 'swiper/swiper-bundle.css'
 
 import './components/icon/index'
+import 'videojs-contrib-hls'
 
 import Dialog from './components/dialog'
 import Loading from './components/loading'
@@ -27,6 +35,26 @@ import {
 // 加载全局组件
 import './components'
 
+Vue.use(VideoPlayer)
+Vue.use(preview, {
+    fullscreenEl: false,
+    arrowEl: false,
+    zoomEl: false,
+    shareEl: false,
+    likeEl: true,
+    tapToClose: false,
+    addCaptionHTMLFn: function(item, captionEl, isFake) {
+        if(!item.title) {
+            captionEl.children[0].innerHTML = '';
+            return false;
+        }
+        captionEl.children[0].innerHTML = `
+            ${ item.title }图片集锦，精彩内容抢先看<br>
+            <span class="source">来源：正北方网</span>
+        `;
+        return true;
+    }
+})
 Vue.use(VueScroller)
 Vue.use(utils)
 
@@ -46,9 +74,9 @@ Object.keys(filters).forEach(item => {
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
-    if (to.path !== '/home' && from.path === '/') {
-        router.replace('/home')
-    }
+    // if (to.path !== '/home' && from.path === '/') {
+    //     router.replace('/home')
+    // }
     document.title = to.meta.title
     const userInfo = sessionStorage.getItem('userInfo') || null
     if (!userInfo && to.meta.auth) {

@@ -1,0 +1,34 @@
+@import '../../assets/css/global.less';
+
+.page-content {
+    .icesnow {
+        .bg(#F2EEED);
+        .pb(16px);
+    }
+}
+
+.icesnow {
+    .tabs {
+        .swiper-wrapper {
+            // 五字宽度
+            .swiper-slide:nth-child(1),
+            .swiper-slide:nth-child(2),
+            .swiper-slide:nth-child(7) {
+                width: 77px !important;
+            }
+            // 四字宽度
+            .swiper-slide:nth-child(3),
+            .swiper-slide:nth-child(4),
+            .swiper-slide:nth-child(5),
+            .swiper-slide:nth-child(6) {
+                width: 62px !important;
+            }
+        }
+    }
+    .banner {
+        .logo-wrap {
+            background-image: url('./home/image/bg@3x.png') !important;
+            background-size: 100% !important;
+        }
+    }
+}

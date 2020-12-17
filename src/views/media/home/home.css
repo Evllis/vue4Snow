@@ -1,0 +1,58 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.media .picture-library .title-icon {
+  width: 338px;
+  height: 18px;
+  margin: 0 auto;
+  margin-top: 17px;
+  margin-bottom: 22px;
+  background-image: url('../img/picture-library.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.media .video-library .title-icon {
+  width: 338px;
+  height: 18px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 21px;
+  background-image: url('../img/video-library.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.media .news-media .title-icon {
+  width: 338px;
+  height: 18px;
+  margin: 0 auto;
+  margin-top: 19px;
+  margin-bottom: 20px;
+  background-image: url('../img/news-media.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.media .index-pic .title-icon {
+  width: 338px;
+  height: 61px;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  background-image: url('../img/index-pic.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.media .live .title-icon {
+  width: 338px;
+  height: 17px;
+  margin: 0 auto;
+  margin-top: 21px;
+  margin-bottom: 16px;
+  background-image: url('../img/live.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}

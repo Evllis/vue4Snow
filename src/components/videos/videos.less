@@ -1,0 +1,149 @@
+@import '../../assets/css/global.less';
+
+.videos {
+    .videos-single {
+        margin-top: 20px;
+        &.embed {
+            position: relative;
+            .title {
+                .pos(left, 15px, bottom, 10px);
+                line-height: 12px;
+                .fs(12px);
+                color: white;
+                z-index: 2;
+            }
+            &::before {
+                content: "";
+                width: 100%;
+                height: 47px;
+                .pos(left, 0, bottom, 0);
+                background-image: linear-gradient(transparent, rgba(0, 0, 0, .7));
+                z-index: 1;
+            }
+        }
+        &.embed.playing {
+            .title,
+            &::before {
+                display: none;
+            }
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+        .title {
+            padding-top: 16px;
+            font-size: 17px;
+            color: #505050;
+            line-height: 24px;
+        }
+        .details-info {
+            padding-top: 15px;
+            color: #A4A4A4;
+            font-size: 12px;
+            line-height: 13px;
+            display: flex;
+            align-items: center;
+        }
+        .video-player {
+            height: 199px;
+            .vjs-poster {
+                background-size: cover;
+            }
+            .vjs-big-play-button {
+                width: 51px;
+                height: 51px;
+                background-image: url('./img/video-play-icon.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                border: 0;
+                background-color: transparent;
+                border-radius: 0;
+                opacity: 1;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                .vjs-icon-placeholder {
+                    display: none;
+                }
+            }
+        }
+        .video-js {
+            width: 100%;
+            height: 100%;
+            video {
+                object-fit: cover;
+            }
+        }
+    }
+    .videos-list {
+        padding: 14px 12px 17px 12px;
+        .bg(white);
+        .swiper-slide {
+            width: 136px;
+            .mr(14px);
+            &:last-child {
+                .mr();
+            }
+            .video-player {
+                height: 90px;
+                .mb(6px);
+                .video-js {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    .vjs-poster {
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 10px;
+                    }
+                }
+                .vjs-big-play-button {
+                    width: 43px;
+                    height: 43px;
+                    background-image: url('./img/video-play-icon.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border: 0;
+                    background-color: transparent;
+                    border-radius: 0;
+                    opacity: 1;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    .vjs-icon-placeholder {
+                        display: none;
+                    }
+                }
+            }
+            .video-info {
+                h4 {
+                    font-size: 12px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: black;
+                    .mb(8px);
+                    .ac(13px);
+                }
+                time {
+                    display: block;
+                    color: black;
+                    font-size: 9px;
+                    opacity: .5;
+                    .ac(8px);
+                }
+            }
+        }
+        .video-js {
+            width: 100%;
+            height: 100%;
+            video {
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .vjs-control-bar {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+    }
+}

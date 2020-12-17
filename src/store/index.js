@@ -7,10 +7,18 @@ export default new Vuex.Store({
     strict: true,
     state: {
         bannerStatus: false,
+        slideIndex: 0,
+        slidePath: ''
     },
     mutations: {
         updataBannerStatus(state, value) {
-            state.bannerStatus = value;
+            state.bannerStatus = value
+        },
+        updateSlideIndex(state, value) {
+            state.slideIndex = value
+        },
+        updateSlidePath(state, value) {
+            state.slidePath = value
         }
         // 'navigation/FORWARD': (state, {to, from}) => {
         //   console.log('navigation/FORWARD', to, from)

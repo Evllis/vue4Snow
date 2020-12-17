@@ -1,0 +1,76 @@
+@import '../../assets/css/global.less';
+
+.list-desc {
+    .pb(15px);
+    background-color: white;
+    .preview {
+        position: relative;
+        figure {
+            width: 100%;
+            height: 185px;
+            position: relative;
+            margin: 0;
+            &::before {
+                content: "";
+                width: 100%;
+                height: 47px;
+                background-image: linear-gradient(transparent, rgba(0, 0, 0, .7));
+                .pos(left, 0, bottom, 0);
+                z-index: 2;
+            }
+            figcaption {
+                font-size: 18px;
+                color: white;
+                font-weight: bold;
+                .ac(17px);
+                .pos(left, 22px, bottom, 15px);
+                z-index: 3;
+            }
+            img {
+                .pos(left, 0, top, 0);
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+            .link {
+                .pos(left, 0, top, 0);
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+            }
+        }
+        p {
+            margin: 15px 20px;
+            font-size: 12px;
+            color: black;
+            line-height: 15px;
+        }
+    }
+    .list-wrap {
+        height: 76px;
+        margin: 0 8px;
+        display: flex;
+        .items {
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            flex: 1;
+            &::before {
+                content: "";
+                width: 100%;
+                height: 30px;
+                background-image: linear-gradient(transparent, rgba(0, 0, 0, .7));
+                .pos(left, 0, bottom, 0);
+            }
+            &:nth-child(2) {
+                margin: 0 2px;
+            }
+            .text {
+                .pos(right, 5px, bottom, 5px);
+                font-size: 10px;
+                color: white;
+                z-index: 1;
+            }
+        }
+    }
+}

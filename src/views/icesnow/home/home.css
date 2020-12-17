@@ -1,0 +1,28 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.icesnow-home {
+  padding-top: 6px;
+}
+.icesnow-home .title-icon {
+  width: 338px;
+  height: 18px;
+  margin: 22px auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.icesnow-home .picture-library .title-icon {
+  background-image: url('image/vr@3x.png');
+}
+.icesnow-home .strategy .title-icon {
+  background-image: url('image/strategy@3x.png');
+}
+.icesnow-home .culture .title-icon {
+  background-image: url('image/culture@3x.png');
+}
+.icesnow-home .taste .title-icon {
+  background-image: url('image/taste.png');
+}

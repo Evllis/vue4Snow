@@ -1,0 +1,34 @@
+@import '../../assets/css/global.less';
+
+.page-content {
+    .scene {
+        .bg(#F2EEED);
+        .pb(16px);
+    }
+}
+
+.scene .banner {
+    .logo-wrap {
+        background-image: url('./home/image/logo@3x.png') !important;
+        background-size: 100% !important;
+    }
+}
+
+.scene {
+    .tabs {
+        .swiper-wrapper {
+            .swiper-slide {
+                &:nth-child(2),
+                &:nth-child(4) {
+                    width: 62px !important;
+                }
+                &:nth-child(3) {
+                    width: 52px !important;
+                }
+                &:nth-child(6) {
+                    width: 47px !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.page-content .media {
+  background-color: #F2EEED;
+  padding-bottom: 16px;
+}
+.media .banner .logo-wrap {
+  background-image: url('img/bg@3x.png') !important;
+  background-size: 100% !important;
+}

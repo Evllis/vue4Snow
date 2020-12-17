@@ -1,6 +1,11 @@
 <template>
     <div class="picture-library">
-        图片库
+        <ys-list-big
+            ref="listBig"
+            :list="listBig"
+            :isHideMore="true"
+            @loadMore="loadData">
+        </ys-list-big>
     </div>
 </template>
 
@@ -9,13 +14,55 @@
         name: 'picture-library',
         data() {
             return {
-
+                loadStatus: false,
+                listBig: [
+                    {
+                        id: 1,
+                        title: '观赛“十四冬”、冬游内蒙古，你有这6种选择！',
+                        time: '2020-12-5',
+                        imgs: [
+                            {
+                                src: 'http://img.daimg.com/uploads/allimg/201205/1-201205001312.jpg',
+                                preview: 1
+                            },
+                            {
+                                src: 'http://img.daimg.com/uploads/allimg/201204/1-201204001449.jpg',
+                                preview: 1
+                            },
+                            {
+                                src: 'http://img.daimg.com/uploads/allimg/201203/1-2012031K916.jpg',
+                                preview: 1
+                            },
+                            {
+                                src: 'http://img.daimg.com/uploads/allimg/201203/1-2012031K222.jpg',
+                                preview: 1
+                            },
+                            {
+                                src: 'https://images.alphacoders.com/111/thumb-350-1119569.jpg',
+                                preview: 1
+                            },
+                            {
+                                src: 'https://images8.alphacoders.com/111/thumb-350-1119568.jpg',
+                                preview: 1
+                            },
+                        ]
+                    }
+                ],
             }
         },
         methods: {
-
+            loadData() {
+                this.$http.get('https://www.fastmock.site/mock/8cfa08f9f31b41ff8daccd7a369bb930/w3chack/api/loadMoreBigPic')
+                    .then(res => {
+                        this.listBig = [...this.listBig, ...res.data]
+                        setTimeout(() => {
+                            this.$refs.listBig.isLoading = false
+                            this.$refs.listBig.btnDisabled = false
+                        }, 2000)
+                    })
+            }
         },
-        moutned() {
+        mounted() {
 
         },
     }

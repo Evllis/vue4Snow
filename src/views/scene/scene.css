@@ -1,0 +1,24 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.page-content .scene {
+  background-color: #F2EEED;
+  padding-bottom: 16px;
+}
+.scene .banner .logo-wrap {
+  background-image: url('home/image/logo@3x.png') !important;
+  background-size: 100% !important;
+}
+.scene .tabs .swiper-wrapper .swiper-slide:nth-child(2),
+.scene .tabs .swiper-wrapper .swiper-slide:nth-child(4) {
+  width: 62px !important;
+}
+.scene .tabs .swiper-wrapper .swiper-slide:nth-child(3) {
+  width: 52px !important;
+}
+.scene .tabs .swiper-wrapper .swiper-slide:nth-child(6) {
+  width: 47px !important;
+}

@@ -4,10 +4,12 @@
         <ys-banner></ys-banner>
         <!-- tabs -->
         <ys-tabs :listArr="tabList"></ys-tabs>
-        <router-view></router-view>
+        <keep-alive v-if="!$route.meta.noKeepAlive">
+            <router-view :key="key"></router-view>
+        </keep-alive>
+        <router-view v-if="$route.meta.noKeepAlive" :key="key"></router-view>
     </div>
 </template>
-
 <script>
     export default {
         name: 'media',
@@ -37,12 +39,14 @@
                     {
                         id: 5,
                         name: '同步翻译',
-                        link: '/media/trans'
+                        link: 'https://www.baidu.com',
+                        ischain: true
                     },
                     {
                         id: 6,
                         name: '远程互动',
-                        link: '/media/remote'
+                        link: 'https://www.163.com',
+                        ischain: true
                     },
                     {
                         id: 7,
@@ -57,9 +61,15 @@
                     {
                         id: 9,
                         name: '微云',
-                        link: '/media/weiyun'
+                        link: 'https://www.weiyun.com',
+                        ischain: true
                     }
-                ]
+                ],
+            }
+        },
+        computed: {
+            key() {
+                return this.$route.name !== undefined? this.$route.name + +new Date(): this.$route + +new Date()
             }
         },
         methods: {
@@ -71,13 +81,13 @@
             // console.log(11111, this.$store.state.app)
             // console.log('====================================')
         },
-        moutned() {
+        mounted() {
 
         },
     }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 
     @import './media.less';
 

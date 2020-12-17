@@ -1,0 +1,103 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.page-content .scene {
+  padding-bottom: 24px !important;
+}
+.scene-details {
+  position: relative;
+}
+.scene-details::after {
+  content: "";
+  width: 19px;
+  height: 4px;
+  background-color: #0055BA;
+  position: absolute;
+  left: 18px;
+  top: 0;
+}
+.scene-details .details-wrap {
+  background-color: white;
+  padding-bottom: 26px;
+  margin-bottom: 11px;
+}
+.scene-details .details-wrap .header {
+  padding: 15px 18px 29px 18px;
+}
+.scene-details .details-wrap .header .info {
+  color: black;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  height: 9px;
+}
+.scene-details .details-wrap .header .info .source {
+  margin-right: 16px;
+}
+.scene-details .details-wrap .header .title {
+  font-size: 20px;
+  padding-top: 28px;
+  line-height: 25px;
+  color: black;
+  font-weight: bold;
+}
+.scene-details .details-wrap .img-wrap {
+  height: 250px;
+  position: relative;
+}
+.scene-details .details-wrap .img-wrap img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.scene-details .details-wrap .details {
+  padding: 22px 27px;
+}
+.scene-details .details-wrap .details p {
+  color: black;
+  line-height: 24px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+.scene-details .details-wrap .details p:last-child {
+  margin-bottom: 0;
+}
+.scene-details .details-wrap .toolbar {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.scene-details .details-wrap .toolbar > div {
+  display: flex;
+  align-items: center;
+}
+.scene-details .details-wrap .toolbar > div.like {
+  margin-right: 11px;
+}
+.scene-details .details-wrap .toolbar > div.like .icon {
+  width: 16px;
+  height: 14px;
+  background-image: url('image/like@2x.png');
+}
+.scene-details .details-wrap .toolbar > div.like .num {
+  color: #7d7878;
+  font-size: 12px;
+  margin-left: 6px;
+}
+.scene-details .details-wrap .toolbar > div.share .icon {
+  width: 13px;
+  height: 15px;
+  background-image: url('image/share@2x.png');
+}
+.scene-details .details-wrap .toolbar .icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

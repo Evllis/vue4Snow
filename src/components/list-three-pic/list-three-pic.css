@@ -1,0 +1,50 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.list-three-pic {
+  display: flex;
+  padding: 0 15px;
+}
+.list-three-pic .left {
+  flex: 0 0 210px;
+  margin-right: 4px;
+}
+.list-three-pic .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.list-three-pic .right .item:first-child {
+  margin-bottom: 4px;
+}
+.list-three-pic .link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.list-three-pic .link::before {
+  content: "";
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.list-three-pic .link img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.list-three-pic .link .text {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  font-size: 14px;
+  color: white;
+  z-index: 1;
+}

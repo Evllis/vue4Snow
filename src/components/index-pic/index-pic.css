@@ -1,0 +1,59 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.index-pic .index-banner {
+  width: 100%;
+  height: 212px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.index-pic .index-banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 47px;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+.index-pic .index-banner a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.index-pic .index-banner h4 {
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  left: 22px;
+  bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.index-pic .index-list {
+  width: 100%;
+  padding: 13px 19px;
+  background-color: white;
+}
+.index-pic .index-list ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.index-pic .index-list ul .index-item {
+  flex: 0 0 57px;
+  height: 57px;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

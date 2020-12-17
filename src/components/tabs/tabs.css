@@ -36,6 +36,12 @@
 .tabs .swiper-wrapper .swiper-slide:last-child {
   margin-right: 0;
 }
+.tabs .swiper-wrapper .swiper-slide:first-child a.tabs-active::before {
+  transform: scale(0);
+}
+.tabs .swiper-wrapper .swiper-slide:first-child a.router-link-exact-active::before {
+  transform: scale(1);
+}
 .tabs .swiper-wrapper .swiper-slide a {
   font-size: 15px;
   color: #505050;
@@ -46,13 +52,13 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -6px;
   width: 100%;
   height: 2px;
   background-color: #198FCF;
   transform: scale(0);
   transition: all 0.3s ease;
 }
-.tabs .swiper-wrapper .swiper-slide a.router-link-exact-active::before {
+.tabs .swiper-wrapper .swiper-slide a.tabs-active::before {
   transform: scale(1);
 }
