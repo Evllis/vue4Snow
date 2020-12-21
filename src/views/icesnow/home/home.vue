@@ -12,9 +12,10 @@
             <ys-list-big :list="listBig"></ys-list-big>
         </div>
         <!-- route -->
-        <div class="route">
+        <!-- <div class="route">
             <div class="title-icon"></div>
-        </div>
+            <ys-route-line></ys-route-line>
+        </div> -->
         <!-- culture -->
         <div class="culture">
             <div class="title-icon"></div>
@@ -85,19 +86,19 @@
                         time: '2020-12-5',
                         imgs: [
                             {
-                                src: 'http://img.daimg.com/uploads/allimg/201205/1-201205001312.jpg',
+                                src: 'https://cdn.pixabay.com/photo/2020/02/18/07/53/squirrel-4858726_960_720.jpg',
                                 preview: 1
                             },
                             {
-                                src: 'http://img.daimg.com/uploads/allimg/201204/1-201204001449.jpg',
+                                src: 'https://cdn.pixabay.com/photo/2020/12/09/13/59/gifts-5817555_960_720.jpg',
                                 preview: 1
                             },
                             {
-                                src: 'http://img.daimg.com/uploads/allimg/201203/1-2012031K916.jpg',
+                                src: 'https://cdn.pixabay.com/photo/2020/12/09/21/39/city-5818738_960_720.jpg',
                                 preview: 1
                             },
                             {
-                                src: 'http://img.daimg.com/uploads/allimg/201203/1-2012031K222.jpg',
+                                src: 'https://cdn.pixabay.com/photo/2020/12/10/11/34/flowers-5820050_960_720.jpg',
                                 preview: 1
                             },
                             {
@@ -181,7 +182,7 @@
                     data: [
                         {
                             id: 1,
-                            img: 'http://img.daimg.com/uploads/allimg/201205/1-201205001312.jpg',
+                            img: 'https://cdn.pixabay.com/photo/2020/03/24/11/21/winter-4963715_960_720.jpg',
                             link: 'https://www.baidu.com',
                             title: '观赛“十四冬”、冬游内蒙古，你有这6种选择！',
                             author: '腾格里新闻',
@@ -189,14 +190,14 @@
                         },
                         {
                             id: 2,
-                            img: 'http://img.daimg.com/uploads/allimg/201204/1-201204001449.jpg',
+                            img: 'https://cdn.pixabay.com/photo/2020/11/17/15/44/cup-5752775_960_720.jpg',
                             link: 'https://www.baidu.com',
                             title: '冬泳挑战冷极限 再掀冬季英雄 会新高潮',
                             author: '海拉尔文旅体育微频'
                         },
                         {
                             id: 3,
-                            img: 'http://img.daimg.com/uploads/allimg/201203/1-2012031K916.jpg',
+                            img: 'https://cdn.pixabay.com/photo/2020/01/03/21/32/hoarfrost-4739176_960_720.jpg',
                             link: 'https://www.baidu.com',
                             title: '观赛“十四冬”、冬游内蒙古，你有这6种选择！',
                             author: '腾格里新闻'

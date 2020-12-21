@@ -73,7 +73,8 @@
             <div class="title-icon"></div>
             <ys-list-small
             :isLoadMore="listSmaill.isLoadMore"
-            :list="listSmaill.data"></ys-list-small>
+            :list="listSmaill.data"
+            :toPath="'/scene/team/details/'"></ys-list-small>
         </div>
         <!-- demand -->
         <div class="form-wrap demand">
@@ -402,7 +403,8 @@
                             img: 'http://img.daimg.com/uploads/allimg/201204/1-201204001449.jpg',
                             link: 'https://www.baidu.com',
                             title: '冬泳挑战冷极限 再掀冬季英雄 会新高潮',
-                            author: '海拉尔文旅体育微频'
+                            author: '海拉尔文旅体育微频',
+                            ischain: true
                         },
                         {
                             id: 3,

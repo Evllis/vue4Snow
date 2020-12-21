@@ -1,0 +1,23 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.icesnow-route {
+  flex: 1;
+}
+.icesnow-route #geoPage,
+.icesnow-route #markPage {
+  position: relative;
+}
+.icesnow-route iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.icesnow-route .amap-container {
+  height: 100%;
+}

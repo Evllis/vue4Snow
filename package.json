@@ -1,10 +1,11 @@
 {
     "name": "vue-cli4-vant",
+    "title": "十四冬奥会",
     "version": "0.1.0",
     "private": true,
     "scripts": {
         "dev": "vue-cli-service serve",
-        "build": "vue-cli-service build",
+        "build": "vue-cli-service build --mode production",
         "test": "vue-cli-service build --mode test",
         "lint": "vue-cli-service lint"
     },

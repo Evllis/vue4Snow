@@ -3,7 +3,6 @@
         <swiper :options="tabSwiperOption" ref="tabSwiper">
             <swiper-slide v-for="item of listArr" :key="item.id">
                 <a
-                    target="_blank"
                     v-if="item.ischain"
                     :href="item.link">
                     {{ item.name }}
@@ -50,6 +49,13 @@
         computed: {
             tabSwiper() {
                 return this.$refs.tabSwiper.$swiper
+            }
+        },
+        watch: {
+            $route(to, form) {
+                if (form.fullPath.includes('details')) {
+                    this.getCurrentSlideIndex()
+                }
             }
         },
         methods: {

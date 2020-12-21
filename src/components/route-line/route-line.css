@@ -1,0 +1,105 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.route-line {
+  padding: 20px 18px;
+  background-color: #F2EEED;
+}
+.route-line .route-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+.route-line .route-list .route-item {
+  flex: 0 0 99px;
+  height: 28px;
+  line-height: 28px;
+  box-shadow: 2px 3% 2px rgba(6, 0, 1, 0.11);
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: white;
+  color: #000;
+  text-align: center;
+}
+.route-line .route-list .route-item.active {
+  background-color: #81C343;
+  color: white;
+}
+.route-line .route-list .route-item:nth-child(n + 4) {
+  margin-top: 10px;
+}
+.route-line .route-info {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 2% 3px #dadada;
+  padding: 18px;
+  display: flex;
+}
+.route-line .route-info .info-left {
+  flex: 1;
+}
+.route-line .route-info .info-left dl {
+  font-size: 12px;
+  display: flex;
+  line-height: 12px;
+  margin-bottom: 15px;
+}
+.route-line .route-info .info-left dl dt {
+  color: #65BB15;
+  font-weight: bold;
+}
+.route-line .route-info .info-left dl dd {
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+.route-line .route-info .info-left dl:last-child {
+  margin-bottom: 0;
+}
+.route-line .route-info .info-left dl:last-child dd {
+  flex: 0 0 150px;
+}
+.route-line .route-info .info-left dl:last-child dd .project {
+  flex: 0 0 70px;
+  margin-top: 8px;
+}
+.route-line .route-info .info-left dl:last-child dd .project:nth-child(1),
+.route-line .route-info .info-left dl:last-child dd .project:nth-child(2) {
+  margin-top: 0;
+}
+.route-line .route-info .info-right {
+  width: 53px;
+  text-align: center;
+}
+.route-line .route-info .info-right .goto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  vertical-align: top;
+  width: 53px;
+  height: 53px;
+  background-color: #4AB22D;
+  border-radius: 100%;
+  color: white;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+.route-line .route-info .info-right .goto .icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 28px;
+  height: 23px;
+  margin-bottom: 1px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('image/route-icon@3x.png');
+}
+.route-line .route-info .info-right .look {
+  color: #65BB15;
+  font-size: 10px;
+}

@@ -1,0 +1,17 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.travel-home {
+  padding-top: 4px;
+}
+.travel-home .new-title {
+  padding: 0 17px;
+  padding-top: 18px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  line-height: 15px;
+}

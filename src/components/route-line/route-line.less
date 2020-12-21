@@ -1,0 +1,101 @@
+@import '../../assets/css/global.less';
+
+.route-line {
+    padding: 20px 18px;
+    background-color: #F2EEED;
+    .route-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .mb(17px);
+        .route-item {
+            flex: 0 0 99px;
+            height: 28px;
+            line-height: 28px;
+            box-shadow: 2px 3% 2px rgba(6, 0, 1, 0.11);
+            border-radius: 5px;
+            font-size: 15px;
+            background-color: white;
+            color: #000;
+            text-align: center;
+            &.active {
+                background-color: #81C343;
+                color: white;
+            }
+            &:nth-child(n + 4) {
+                .mt(10px);
+            }
+        }
+    }
+    .route-info {
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 1px 2% 3px #dadada;
+        padding: 18px;
+        display: flex;
+        .info-left {
+            flex: 1;
+            dl {
+                font-size: 12px;
+                display: flex;
+                line-height: 12px;
+                .mb(15px);
+                dt {
+                    color: #65BB15;
+                    font-weight: bold;
+                }
+                dd {
+                    color: #000;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                &:last-child {
+                    .mb(0);
+                    dd {
+                        flex: 0 0 150px;
+                        .project {
+                            flex: 0 0 70px;
+                            .mt(8px);
+                            &:nth-child(1),
+                            &:nth-child(2) {
+                                .mt(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .info-right {
+            width: 53px;
+            text-align: center;
+            .goto {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                vertical-align: top;
+                width: 53px;
+                height: 53px;
+                background-color: #4AB22D;
+                border-radius: 100%;
+                .icon {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 28px;
+                    height: 23px;
+                    .mb(1px);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-image: url('./image/route-icon@3x.png');
+                }
+                color: white;
+                font-size: 10px;
+                .mb(15px);
+            }
+            .look {
+                color: #65BB15;
+                font-size: 10px;
+            }
+        }
+    }
+}

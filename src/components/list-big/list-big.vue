@@ -60,7 +60,8 @@
                 isLoading: false,
                 btnDisabled: false,
                 controlButtonStatus: false,
-                inActiveClass: false
+                inActiveClass: false,
+                timer: null
             }
         },
         methods: {
@@ -70,10 +71,18 @@
                 this.$emit('loadMore')
             },
             clickItem() {
-                this.controlButtonStatus = true
-                setTimeout(() => {
-                    this.inActiveClass = true
-                }, 200)
+                clearInterval(this.timer)
+                this.$loading.show()
+                this.timer = setInterval(() => {
+                    if (document.querySelector('.pswp--open')) {
+                        clearInterval(this.timer)
+                        this.$loading.hide()
+                        this.controlButtonStatus = true
+                        setTimeout(() => {
+                            this.inActiveClass = true
+                        }, 200)
+                    }
+                }, 500)
             }
         },
         created() {

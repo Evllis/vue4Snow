@@ -25,6 +25,20 @@ const SceneBack = r => require.ensure([], () => r(require('../views/scene/back/b
 
 const IceSnow = r => require.ensure([], () => r(require('../views/icesnow/icesnow.vue')), 'icesnow')
 const IceSnowHome = r => require.ensure([], () => r(require('../views/icesnow/home/home.vue')), 'icesnow-home')
+const IceSnowVr = r => require.ensure([], () => r(require('../views/icesnow/vr/vr.vue')), 'icesnow-vr')
+const IceSnowTravel = r => require.ensure([], () => r(require('../views/icesnow/travel/travel.vue')), 'icesnow-travel')
+const TravelHome = r => require.ensure([], () => r(require('../views/icesnow/travel/home/home.vue')), 'travel-home')
+const TravelDetails = r => require.ensure([], () => r(require('../views/icesnow/travel/details/details.vue')), 'travel-details')
+// const IceSnowRoute = r => require.ensure([], () => r(require('../views/icesnow/route/route.vue')), 'icesnow-route')
+const IceSnowCulture = r => require.ensure([], () => r(require('../views/icesnow/culture/culture.vue')), 'icesnow-culture')
+const CultureHome = r => require.ensure([], () => r(require('../views/icesnow/culture/home/home.vue')), 'culture-home')
+const CultureDetails = r => require.ensure([], () => r(require('../views/icesnow/culture/details/details.vue')), 'culture-details')
+const IceSnowStrategy = r => require.ensure([], () => r(require('../views/icesnow/strategy/strategy.vue')), 'icesnow-strategy')
+const StrategyHome = r => require.ensure([], () => r(require('../views/icesnow/strategy/home/home.vue')), 'strategy-home')
+const StrategyDetails = r => require.ensure([], () => r(require('../views/icesnow/strategy/details/details.vue')), 'strategy-details')
+const IceSnowTaste = r => require.ensure([], () => r(require('../views/icesnow/taste/taste.vue')), 'icesnow-taste')
+const TasteHome = r => require.ensure([], () => r(require('../views/icesnow/taste/home/home.vue')), 'taste-home')
+const TasteDetails = r => require.ensure([], () => r(require('../views/icesnow/taste/details/details.vue')), 'taste-details')
 
 
 const Live = r => require.ensure([], () => r(require('../views/live/live.vue')), 'live')
@@ -53,7 +67,7 @@ const routes = [
         component: Media,
         meta: {
             title: '媒体云',
-            keepAlive: false,
+            keepAlive: true,
         },
         children: [
             {
@@ -62,7 +76,7 @@ const routes = [
                 component: MediaHome,
                 meta: {
                     title: '媒体云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
             },
             {
@@ -71,7 +85,7 @@ const routes = [
                 component: PictureLibrary,
                 meta: {
                     title: '媒体云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
             },
             {
@@ -80,7 +94,7 @@ const routes = [
                 component: VideoLibrary,
                 meta: {
                     title: '媒体云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
             },
             {
@@ -89,7 +103,7 @@ const routes = [
                 component: NewLibrary,
                 meta: {
                     title: '媒体云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
                 children: [
                     {
@@ -98,7 +112,7 @@ const routes = [
                         component: NewLibraryHome,
                         meta: {
                             title: '媒体云',
-                            keepAlive: false,
+                            keepAlive: true,
                         },
                     },
                     {
@@ -107,7 +121,7 @@ const routes = [
                         component: NewLibraryDetails,
                         meta: {
                             title: '媒体云',
-                            keepAlive: false,
+                            keepAlive: true,
                         },
                     },
                 ]
@@ -118,7 +132,7 @@ const routes = [
                 component: MediaRace,
                 meta: {
                     title: '媒体云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
             },
             {
@@ -127,7 +141,7 @@ const routes = [
                 component: MediaLive,
                 meta: {
                     title: '媒体云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
             },
         ]
@@ -138,7 +152,7 @@ const routes = [
         component: Scene,
         meta: {
             title: '现场云',
-            keepAlive: false,
+            keepAlive: true,
         },
         children: [
             {
@@ -147,7 +161,7 @@ const routes = [
                 component: SceneHome,
                 meta: {
                     title: '现场云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
             },
             {
@@ -156,7 +170,7 @@ const routes = [
                 component: SceneLive,
                 meta: {
                     title: '现场云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
             },
             {
@@ -165,7 +179,7 @@ const routes = [
                 component: Scene5G,
                 meta: {
                     title: '现场云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
             },
             {
@@ -174,7 +188,7 @@ const routes = [
                 component: SceneTeam,
                 meta: {
                     title: '现场云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
                 children: [
                     {
@@ -183,7 +197,7 @@ const routes = [
                         component: SceneTeamHome,
                         meta: {
                             title: '现场云',
-                            keepAlive: false,
+                            keepAlive: true,
                         },
                     },
                     {
@@ -192,7 +206,7 @@ const routes = [
                         component: SceneDetails,
                         meta: {
                             title: '现场云',
-                            keepAlive: false,
+                            keepAlive: true,
                         },
                     },
                 ]
@@ -203,7 +217,7 @@ const routes = [
                 component: SceneDemand,
                 meta: {
                     title: '现场云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
             },
             {
@@ -212,7 +226,7 @@ const routes = [
                 component: SceneBack,
                 meta: {
                     title: '现场云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
             },
         ]
@@ -223,7 +237,7 @@ const routes = [
         component: IceSnow,
         meta: {
             title: '冰雪云',
-            keepAlive: false,
+            keepAlive: true,
         },
         children: [
             {
@@ -232,8 +246,142 @@ const routes = [
                 component: IceSnowHome,
                 meta: {
                     title: '冰雪云',
-                    keepAlive: false,
+                    keepAlive: true,
                 },
+            },
+            {
+                path: 'vr',
+                name: 'icesnow-vr',
+                component: IceSnowVr,
+                meta: {
+                    title: '冰雪云',
+                    keepAlive: true,
+                },
+            },
+            {
+                path: 'travel',
+                name: 'icesnow-travel',
+                component: IceSnowTravel,
+                meta: {
+                    title: '冰雪云',
+                    keepAlive: true,
+                },
+                children: [
+                    {
+                        path: '/',
+                        name: 'travel-home',
+                        component: TravelHome,
+                        meta: {
+                            title: '冰雪云',
+                            keepAlive: true,
+                        },
+                    },
+                    {
+                        path: 'details/:id',
+                        name: 'travel-details',
+                        component: TravelDetails,
+                        meta: {
+                            title: '冰雪云',
+                            keepAlive: true,
+                        },
+                    },
+                ]
+            },
+            // {
+            //     path: 'route',
+            //     name: 'icesnow-route',
+            //     component: IceSnowRoute,
+            //     meta: {
+            //         title: '冰雪云',
+            //         keepAlive: true,
+            //     },
+            // },
+            {
+                path: 'culture',
+                name: 'icesnow-culture',
+                component: IceSnowCulture,
+                meta: {
+                    title: '冰雪云',
+                    keepAlive: true,
+                },
+                children: [
+                    {
+                        path: '/',
+                        name: 'culture-home',
+                        component: CultureHome,
+                        meta: {
+                            title: '冰雪云',
+                            keepAlive: true,
+                        },
+                    },
+                    {
+                        path: 'details/:id',
+                        name: 'culture-details',
+                        component: CultureDetails,
+                        meta: {
+                            title: '冰雪云',
+                            keepAlive: true,
+                        },
+                    },
+                ]
+            },
+            {
+                path: 'strategy',
+                name: 'icesnow-strategy',
+                component: IceSnowStrategy,
+                meta: {
+                    title: '冰雪云',
+                    keepAlive: true,
+                },
+                children: [
+                    {
+                        path: '/',
+                        name: 'strategy-home',
+                        component: StrategyHome,
+                        meta: {
+                            title: '冰雪云',
+                            keepAlive: true,
+                        },
+                    },
+                    {
+                        path: 'details/:id',
+                        name: 'strategy-details',
+                        component: StrategyDetails,
+                        meta: {
+                            title: '冰雪云',
+                            keepAlive: true,
+                        },
+                    },
+                ]
+            },
+            {
+                path: 'taste',
+                name: 'icesnow-taste',
+                component: IceSnowTaste,
+                meta: {
+                    title: '冰雪云',
+                    keepAlive: true,
+                },
+                children: [
+                    {
+                        path: '/',
+                        name: 'taste-home',
+                        component: TasteHome,
+                        meta: {
+                            title: '冰雪云',
+                            keepAlive: true,
+                        },
+                    },
+                    {
+                        path: 'details/:id',
+                        name: 'taste-details',
+                        component: TasteDetails,
+                        meta: {
+                            title: '冰雪云',
+                            keepAlive: true,
+                        },
+                    },
+                ]
             },
         ]
     },
@@ -250,6 +398,7 @@ const routes = [
 
 const router = new VueRouter({
     mode: 'history',
+    base: '/vue/',
     routes,
     scrollBehavior: () => ({
         y: 0,

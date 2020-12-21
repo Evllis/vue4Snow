@@ -31,6 +31,14 @@
   color: white;
   font-size: 12px;
 }
+.broadcast .swiper-container .swiper-slide .link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
 .broadcast .swiper-container .broadcastSwiper-pagination {
   bottom: 41px;
 }

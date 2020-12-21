@@ -5,9 +5,18 @@
                 v-for="item of swiperList"
                 :key="item.id"
                 :style="{ backgroundImage: `url(${ item.img })` }">
-                <a :href="item.link" target="_blank">
+                <a
+                    :href="item.link"
+                    v-if="item.ischain"
+                    class="link">
                     <span class="title">{{ item.title }}</span>
                 </a>
+                <router-link
+                    class="link"
+                    v-if="!item.ischain"
+                    :to="`${ toPath + item.id }`">
+                    <span class="title">{{ item.title }}</span>
+                </router-link>
             </swiper-slide>
             <div class="broadcastSwiper-pagination swiper-pagination" slot="pagination"></div>
         </swiper>
@@ -26,6 +35,10 @@
                 type: Array,
                 default: () => [],
                 required: true
+            },
+            toPath: {
+                type: String,
+                default: '/home/'
             }
         },
         data() {

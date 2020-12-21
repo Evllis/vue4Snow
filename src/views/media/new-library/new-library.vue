@@ -1,9 +1,9 @@
 <template>
     <div class="new-library">
-        <keep-alive v-if="!$route.meta.noKeepAlive">
-            <router-view :key="key"></router-view>
+        <keep-alive>
+            <router-view v-if="$route.meta.keepAlive" :key="key"></router-view>
         </keep-alive>
-        <router-view v-if="$route.meta.noKeepAlive" :key="key"></router-view>
+        <router-view v-if="!$route.meta.keepAlive" :key="key"></router-view>
     </div>
 </template>
 

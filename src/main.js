@@ -74,10 +74,10 @@ Object.keys(filters).forEach(item => {
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
-    // if (to.path !== '/home' && from.path === '/') {
-    //     router.replace('/home')
-    // }
-    document.title = to.meta.title
+    if (to.path !== '/home' && from.path === '/') {
+        router.replace('/home')
+    }
+    window.document.title = to.meta.title == undefined ? '十四冬奥会' : to.meta.title
     const userInfo = sessionStorage.getItem('userInfo') || null
     if (!userInfo && to.meta.auth) {
         next('/login')

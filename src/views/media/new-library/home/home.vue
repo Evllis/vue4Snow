@@ -5,7 +5,7 @@
         <ys-list-small
             :isLoadMore="listSmaill.isLoadMore"
             :list="listSmaill.data"
-            :toPath="`${ $route.path }/details`"
+            :toPath="'/media/new/details/'"
             @loadMore="loadData"></ys-list-small>
     </div>
 </template>
@@ -20,19 +20,19 @@
                     data: [
                         {
                             id: 1,
-                            img: 'http://img.daimg.com/uploads/allimg/201205/1-201205001312.jpg',
+                            img: 'https://cdn.pixabay.com/photo/2019/11/30/21/37/star-4664313_960_720.jpg',
                             title: '观赛“十四冬”、冬游内蒙古，你有这6种选择！',
                             author: '腾格里新闻'
                         },
                         {
                             id: 2,
-                            img: 'http://img.daimg.com/uploads/allimg/201204/1-201204001449.jpg',
+                            img: 'https://cdn.pixabay.com/photo/2020/11/17/20/00/swan-5753508_960_720.jpg',
                             title: '冬泳挑战冷极限 再掀冬季英雄 会新高潮',
                             author: '海拉尔文旅体育微频'
                         },
                         {
                             id: 3,
-                            img: 'http://img.daimg.com/uploads/allimg/201203/1-2012031K916.jpg',
+                            img: 'https://cdn.pixabay.com/photo/2020/11/02/05/56/music-5705801_960_720.jpg',
                             title: '观赛“十四冬”、冬游内蒙古，你有这6种选择！',
                             author: '腾格里新闻'
                         },

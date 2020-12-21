@@ -50,7 +50,7 @@
                             // webm
                             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
                         }],
-                        poster: "http://img.daimg.com/uploads/allimg/201202/1-201202160211.jpg",
+                        poster: "https://cdn.pixabay.com/photo/2020/12/08/14/27/winter-5814578_960_720.jpg",
                     },
                 ],
             }

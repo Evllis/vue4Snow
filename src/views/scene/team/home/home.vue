@@ -3,7 +3,7 @@
         <ys-list-small
             :isLoadMore="listSmaill.isLoadMore"
             :list="listSmaill.data"
-            :toPath="`${ $route.path }/details`"
+            :toPath="`/scene/team/details/`"
             @loadMore="loadData"></ys-list-small>
     </div>
 </template>
@@ -26,7 +26,9 @@
                             id: 2,
                             img: 'http://img.daimg.com/uploads/allimg/201204/1-201204001449.jpg',
                             title: '冬泳挑战冷极限 再掀冬季英雄 会新高潮',
-                            author: '海拉尔文旅体育微频'
+                            author: '海拉尔文旅体育微频',
+                            link: 'https://www.baidu.com',
+                            ischain: true
                         },
                         {
                             id: 3,

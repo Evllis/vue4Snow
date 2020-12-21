@@ -26,6 +26,8 @@ const indexPic = r => require.ensure([], () => r(require('./index-pic/index-pic'
 const listDesc = r => require.ensure([], () => r(require('./list-desc/list-desc')), 'list-desc')
 // 三图矩阵列表
 const listThreePic = r => require.ensure([], () => r(require('./list-three-pic/list-three-pic')), 'list-three-pic')
+// 线路图
+const routeLine = r => require.ensure([], () => r(require('./route-line/route-line')), 'route-line')
 
 Vue.component('ys-header', header)
 Vue.component('ys-footer', footer)
@@ -40,3 +42,4 @@ Vue.component('ys-list-pic', listPic)
 Vue.component('ys-index-pic', indexPic)
 Vue.component('ys-list-desc', listDesc)
 Vue.component('ys-list-three-pic', listThreePic)
+Vue.component('ys-route-line', routeLine)

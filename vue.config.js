@@ -11,13 +11,13 @@ function resolve(dir) {
 }
 module.exports = {
 
-    publicPath: '/',
+    publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
 
     // 将构建好的文件输出到哪里
     outputDir: 'dist/static',
 
     // 放置生成的静态资源(js、css、img、fonts)的目录。
-    assetsDir: 'static',
+    assetsDir: process.env.NODE_ENV === 'production' ? './' : 'static',
 
     // 指定生成的 index.html 的输出路径
     indexPath: 'index.html',

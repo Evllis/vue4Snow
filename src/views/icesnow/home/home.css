@@ -17,6 +17,9 @@
 .icesnow-home .picture-library .title-icon {
   background-image: url('image/vr@3x.png');
 }
+.icesnow-home .route .title-icon {
+  background-image: url('image/route@3x.png');
+}
 .icesnow-home .strategy .title-icon {
   background-image: url('image/strategy@3x.png');
 }

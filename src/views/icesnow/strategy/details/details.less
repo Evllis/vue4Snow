@@ -1,0 +1,96 @@
+@import '../../../../assets/css/global.less';
+
+.page-content .icesnow {
+    .pb(24px) !important;
+}
+
+.strategy-details {
+    position: relative;
+    &::after {
+        content: "";
+        width: 19px;
+        height: 4px;
+        .bg(#0055BA);
+        .pos(left, 18px, top, 0);
+    }
+    .details-wrap {
+        .bg(white);
+        .pb(26px);
+        .mb(11px);
+        .header {
+            padding: 15px 18px 29px 18px;
+            .info {
+                color: black;
+                font-size: 9px;
+                .ac(9px);
+                .source {
+                    .mr(16px);
+                }
+            }
+            .title {
+                .fs(20px);
+                .pt(28px);
+                line-height: 25px;
+                color: black;
+                font-weight: bold;
+            }
+        }
+        .img-wrap {
+            height: 250px;
+            position: relative;
+            img {
+                height: 100%;
+                .pos(left, 50%, top, 0);
+                transform: translateX(-50%);
+            }
+        }
+        .details {
+            padding: 22px 27px;
+            p {
+                color: black;
+                line-height: 24px;
+                .mb(30px);
+                .fs(15px);
+                &:last-child {
+                    .mb(0);
+                }
+            }
+        }
+        .toolbar {
+            .pt(15px);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .pr(30px);
+            & > div {
+                display: flex;
+                align-items: center;
+                &.like {
+                    .mr(11px);
+                    .icon {
+                        width: 16px;
+                        height: 14px;
+                        background-image: url('./image/like@2x.png');
+                    }
+                    .num {
+                        color: #7d7878;
+                        .fs(12px);
+                        .ml(6px);
+                    }
+                }
+                &.share {
+                    .icon {
+                        width: 13px;
+                        height: 15px;
+                        background-image: url('./image/share@2x.png');
+                    }
+                }
+            }
+            .icon {
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+}

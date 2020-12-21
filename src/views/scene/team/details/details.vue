@@ -4,7 +4,6 @@
             <div class="header">
                 <div class="info">
                     <span class="source">来源：人民日报</span>
-                    我是一个id::::{{ this.$route.params }}:::::
                     <span class="date">2020年12月3日</span>
                 </div>
                 <h2 class="title">“十四冬”火炬传递新年第一棒 传递的</h2>
@@ -32,7 +31,7 @@
             <ys-list-small
             :isLoadMore="listSmaill.isLoadMore"
             :list="listSmaill.data"
-            :toPath="'/scene/team/details'"></ys-list-small>
+            :toPath="'/scene/team/details/'"></ys-list-small>
         </div>
     </div>
 </template>
@@ -61,7 +60,9 @@
                             id: 3,
                             img: 'http://img.daimg.com/uploads/allimg/201203/1-2012031K916.jpg',
                             title: '观赛“十四冬”、冬游内蒙古，你有这6种选择！',
-                            author: '腾格里新闻'
+                            author: '腾格里新闻',
+                            link: 'https://www.qq.com',
+                            ischain: true
                         },
                         {
                             id: 4,
@@ -86,7 +87,9 @@
             }
         },
         computed: {
-
+            element() {
+                return document.getElementsByClassName('page-content')[0]
+            }
         },
         methods: {
 
@@ -95,7 +98,7 @@
 
         },
         mounted() {
-
+            this.element.scrollTop = 0
         },
     }
 </script>

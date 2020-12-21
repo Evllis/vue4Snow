@@ -1,6 +1,6 @@
 <template>
     <div class="index-pic">
-        <div class="index-banner" :style="{ backgroundImage: `url(${ indexTop.bg })` }">
+        <div class="index-banner" :style="{ backgroundImage: `url(${ indexTop.img })` }">
             <h4>{{ indexTop.title }}</h4>
             <a
                 :href="indexTop.link"
