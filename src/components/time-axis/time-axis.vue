@@ -392,9 +392,16 @@
         },
         mounted() {
             this.$nextTick(() => {
+                let $width = 0
                 this.animateTarget = this.$refs.slider
+                if (this.$util.isIOS()) {
+                    $width = window.screen.width
+                }
+                else {
+                    $width = document.querySelector('#app').offsetWidth
+                }
+                this.totalWidth = this.animateTarget.offsetWidth - $width
                 this.tick()
-                this.totalWidth = this.animateTarget.offsetWidth - window.screen.width
             })
             // console.group('mounted 挂载结束状态===============》')
             // console.log('%c%s', 'color:red', 'el      : ' + this.$el) //已被初始化

@@ -83,7 +83,7 @@
     }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 
     @import './live.less';
 

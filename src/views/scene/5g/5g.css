@@ -4,6 +4,22 @@
 /*
     NOTE: font style
 */
+.scene-5g {
+  padding: 0 16px;
+  padding-top: 9px;
+}
+.scene-5g .videos-single .video-js {
+  border-radius: 10px;
+}
+.scene-5g .videos-single .video-js video {
+  border-radius: 10px;
+}
+.scene-5g .videos-single .video-js .vjs-control-bar {
+  border-radius: 0 0 10px 10px;
+}
+.scene-5g .videos-single .video-player .vjs-poster {
+  border-radius: 10px;
+}
 .scene-5g .more-btn {
   padding-top: 28px;
   text-align: center;

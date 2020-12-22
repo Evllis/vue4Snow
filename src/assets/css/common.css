@@ -235,8 +235,14 @@ body[data-aos-delay='3700'] [data-aos],
   transition-delay: 3700ms !important;
 }
 @media screen and (min-width: 640px) {
-  .app .route-list .route-item {
-    margin-top: 0 !important;
+  body {
+    background-color: #f9f9f9 !important;
+  }
+  .app {
+    max-width: 400px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .app .route-wrap .route-icon {
     width: 100%;
@@ -247,22 +253,16 @@ body[data-aos-delay='3700'] [data-aos],
   .app .route-wrap iframe {
     height: 300px;
   }
-  .app .list-big .big-wrap {
-    justify-content: start;
-  }
-  .app .list-big .big-item {
-    margin-left: 0.18rem;
-    margin-right: 0.18rem;
-  }
-  .app .list-big .big-item:nth-child(3),
-  .app .list-big .big-item:nth-child(4),
-  .app .list-big .big-item:nth-child(5) {
-    margin-top: 0 !important;
-  }
   .app .list-three-pic {
     flex: 0 0 4.2rem;
   }
   .app .list-three-pic .left {
     flex: 0 0 40% !important;
+  }
+  .pswp__caption {
+    bottom: 10px !important;
+  }
+  .pswp__caption .pswp__caption__center {
+    padding: 0 !important;
   }
 }
