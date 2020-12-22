@@ -148,6 +148,7 @@ body {
 .app .page-content {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .route-btn {
   width: 34px;
@@ -178,12 +179,15 @@ body {
 .route-wrap.in {
   transform: translate3d(0, 0, 0);
 }
+.route-wrap .route-inner {
+  height: 100%;
+}
 .route-wrap iframe {
   border: 0;
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 600px;
+  height: 60%;
 }
 .route-wrap .route-icon {
   width: 338px;
@@ -229,4 +233,36 @@ body {
 body[data-aos-delay='3700'] [data-aos],
 [data-aos][data-aos][data-aos-delay='3700'] {
   transition-delay: 3700ms !important;
+}
+@media screen and (min-width: 640px) {
+  .app .route-list .route-item {
+    margin-top: 0 !important;
+  }
+  .app .route-wrap .route-icon {
+    width: 100%;
+  }
+  .app .route-wrap .route-icon .route-back {
+    left: 15px;
+  }
+  .app .route-wrap iframe {
+    height: 300px;
+  }
+  .app .list-big .big-wrap {
+    justify-content: start;
+  }
+  .app .list-big .big-item {
+    margin-left: 0.18rem;
+    margin-right: 0.18rem;
+  }
+  .app .list-big .big-item:nth-child(3),
+  .app .list-big .big-item:nth-child(4),
+  .app .list-big .big-item:nth-child(5) {
+    margin-top: 0 !important;
+  }
+  .app .list-three-pic {
+    flex: 0 0 4.2rem;
+  }
+  .app .list-three-pic .left {
+    flex: 0 0 40% !important;
+  }
 }

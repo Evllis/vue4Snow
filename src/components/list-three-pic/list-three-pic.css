@@ -17,6 +17,9 @@
   display: flex;
   align-items: center;
 }
+.list-three-pic .right .list {
+  width: 100%;
+}
 .list-three-pic .right .item:first-child {
   margin-bottom: 4px;
 }

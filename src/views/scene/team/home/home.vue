@@ -1,5 +1,6 @@
 <template>
     <div class="scene-team-home">
+        <h4 class="new-title">官方发布</h4>
         <ys-list-small
             :isLoadMore="listSmaill.isLoadMore"
             :list="listSmaill.data"

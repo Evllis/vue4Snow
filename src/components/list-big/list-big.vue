@@ -6,7 +6,7 @@
             <li class="big-item"
                 v-for="(item, index) of list"
                 :key="index"
-                @click="clickItem">
+                @click="clickItem(item)">
                 <div class="big-children">
                     <span class="cover">
                         <img v-for="(pic, pic_index) of item.imgs" :src="pic.src" :key="pic_index"
@@ -21,15 +21,7 @@
         </ul>
         <div class="preview-toolbar" v-if="controlButtonStatus"
             :class="{ 'in': inActiveClass }">
-            <div class="preview-wrap">
-                <div class="like">
-                    <i class="icon"></i>
-                    <span class="num">998</span>
-                </div>
-                <div class="share">
-                    <i class="icon"></i>
-                </div>
-            </div>
+            <ys-toolbar :pageId="currentId"></ys-toolbar>
         </div>
         <div class="more-btn" v-if="isHideMore">
             <button @click="loadMore" :disabled="btnDisabled">
@@ -61,7 +53,8 @@
                 btnDisabled: false,
                 controlButtonStatus: false,
                 inActiveClass: false,
-                timer: null
+                timer: null,
+                currentId: '1'
             }
         },
         methods: {
@@ -70,7 +63,8 @@
                 this.btnDisabled = true
                 this.$emit('loadMore')
             },
-            clickItem() {
+            clickItem(item) {
+                this.currentId = item.id
                 clearInterval(this.timer)
                 this.$loading.show()
                 this.timer = setInterval(() => {

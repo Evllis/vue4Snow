@@ -17,15 +17,7 @@
                 <p>冬运中心综合训练馆项目位于首都体育馆北侧，总建筑面积33220平方米。该场馆地上六层，地下一层，局部二层，主体建筑高度为30米，其中一层冰场是我国第一块标准冰壶训练场地，将供国家队训练使用。</p>
                 <p>餐厅、运动员体能训练和医疗康复等设施，为运动员提供一个全方位的训练环境。</p>
             </div>
-            <div class="toolbar">
-                <div class="like">
-                    <i class="icon"></i>
-                    <span class="num">998</span>
-                </div>
-                <div class="share">
-                    <i class="icon"></i>
-                </div>
-            </div>
+            <ys-toolbar :pageId="$route.params.id"></ys-toolbar>
         </div>
         <div class="recommend">
             <ys-list-small

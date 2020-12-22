@@ -204,6 +204,7 @@
                         // height: '360',
                         // autoplay: true,
                         // muted: true,
+                        preload: 'none',
                         controlBar: {
                             // 当前时间和持续时间的分隔符
                             timeDivider: false,
@@ -219,7 +220,7 @@
                         sources: [{
                             type: "video/mp4",
                             // mp4
-                            src: "http://vjs.zencdn.net/v/oceans.mp4",
+                            src: "https://www.w3chack.com/vue/clips.vorwaerts-gmbh.de_big_buck_bunny.mp4",
                             // webm
                             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
                         }],
@@ -232,6 +233,7 @@
                         // height: '360',
                         // autoplay: true,
                         // muted: true,
+                        preload: 'none',
                         title: '单板滑雪U型场地技巧',
                         time: '2020-12-01',
                         controlBar: {
@@ -250,7 +252,7 @@
                         sources: [{
                             type: "video/mp4",
                             // mp4
-                            src: "http://vjs.zencdn.net/v/oceans.mp4",
+                            src: "https://www.w3chack.com/vue/clips.vorwaerts-gmbh.de_big_buck_bunny.mp4",
                             // webm
                             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
                         }],
@@ -261,6 +263,7 @@
                         // height: '360',
                         // autoplay: true,
                         // muted: true,
+                        preload: 'none',
                         title: '单板滑雪U型场地技巧',
                         time: '2020-12-01',
                         controlBar: {
@@ -279,7 +282,7 @@
                         sources: [{
                             type: "video/mp4",
                             // mp4
-                            src: "http://vjs.zencdn.net/v/oceans.mp4",
+                            src: "https://www.w3chack.com/vue/clips.vorwaerts-gmbh.de_big_buck_bunny.mp4",
                             // webm
                             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
                         }],
@@ -290,6 +293,7 @@
                         // height: '360',
                         // autoplay: true,
                         // muted: true,
+                        preload: 'none',
                         title: '单板滑雪U型场地技巧',
                         time: '2020-12-01',
                         controlBar: {
@@ -308,7 +312,7 @@
                         sources: [{
                             type: "video/mp4",
                             // mp4
-                            src: "http://vjs.zencdn.net/v/oceans.mp4",
+                            src: "https://www.w3chack.com/vue/clips.vorwaerts-gmbh.de_big_buck_bunny.mp4",
                             // webm
                             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
                         }],
@@ -319,6 +323,7 @@
                         // height: '360',
                         // autoplay: true,
                         // muted: true,
+                        preload: 'none',
                         title: '单板滑雪U型场地技巧',
                         time: '2020-12-01',
                         controlBar: {
@@ -337,7 +342,7 @@
                         sources: [{
                             type: "video/mp4",
                             // mp4
-                            src: "http://vjs.zencdn.net/v/oceans.mp4",
+                            src: "https://www.w3chack.com/vue/clips.vorwaerts-gmbh.de_big_buck_bunny.mp4",
                             // webm
                             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
                         }],
@@ -348,6 +353,7 @@
                         // height: '360',
                         // autoplay: true,
                         // muted: true,
+                        preload: 'none',
                         title: '单板滑雪U型场地技巧',
                         time: '2020-12-01',
                         controlBar: {
@@ -366,7 +372,7 @@
                         sources: [{
                             type: "video/mp4",
                             // mp4
-                            src: "http://vjs.zencdn.net/v/oceans.mp4",
+                            src: "https://www.w3chack.com/vue/clips.vorwaerts-gmbh.de_big_buck_bunny.mp4",
                             // webm
                             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
                         }],
@@ -377,6 +383,7 @@
                         // height: '360',
                         // autoplay: true,
                         // muted: true,
+                        preload: 'none',
                         title: '单板滑雪U型场地技巧',
                         time: '2020-12-01',
                         controlBar: {
@@ -395,7 +402,7 @@
                         sources: [{
                             type: "video/mp4",
                             // mp4
-                            src: "http://vjs.zencdn.net/v/oceans.mp4",
+                            src: "https://www.w3chack.com/vue/clips.vorwaerts-gmbh.de_big_buck_bunny.mp4",
                             // webm
                             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
                         }],
@@ -406,6 +413,7 @@
                         // height: '360',
                         // autoplay: true,
                         // muted: true,
+                        preload: 'none',
                         title: '单板滑雪U型场地技巧',
                         time: '2020-12-01',
                         controlBar: {
@@ -424,7 +432,7 @@
                         sources: [{
                             type: "video/mp4",
                             // mp4
-                            src: "http://vjs.zencdn.net/v/oceans.mp4",
+                            src: "https://www.w3chack.com/vue/clips.vorwaerts-gmbh.de_big_buck_bunny.mp4",
                             // webm
                             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
                         }],
@@ -496,6 +504,7 @@
                         // height: '360',
                         // autoplay: true,
                         // muted: true,
+                        preload: 'none',
                         controlBar: {
                             // 当前时间和持续时间的分隔符
                             timeDivider: false,

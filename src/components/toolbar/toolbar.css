@@ -1,0 +1,73 @@
+/*
+    NOTE: global color
+*/
+/*
+    NOTE: font style
+*/
+.toolbar {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.toolbar > div {
+  display: flex;
+  align-items: center;
+}
+.toolbar > div.like {
+  margin-right: 11px;
+}
+.toolbar > div.like .icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  left: 12px;
+}
+.toolbar > div.like .icon::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  background: url('image/web_heart_animation.png') 0 0 no-repeat;
+  background-size: 2900%;
+  height: 60px;
+  width: 60px;
+  margin-left: -3px;
+  margin-top: -4px;
+}
+.toolbar > div.like .icon.active::before {
+  animation: heart-burst steps(28) 0.8s 1 both;
+}
+@-webkit-keyframes heart-burst {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+@keyframes heart-burst {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.toolbar > div.like .num {
+  color: #7d7878;
+  font-size: 12px;
+  margin-left: 6px;
+}
+.toolbar > div.share .icon {
+  width: 13px;
+  height: 15px;
+  background-image: url('image/share@2x.png');
+}
+.toolbar .icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

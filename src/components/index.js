@@ -28,6 +28,8 @@ const listDesc = r => require.ensure([], () => r(require('./list-desc/list-desc'
 const listThreePic = r => require.ensure([], () => r(require('./list-three-pic/list-three-pic')), 'list-three-pic')
 // 线路图
 const routeLine = r => require.ensure([], () => r(require('./route-line/route-line')), 'route-line')
+// 点赞喜欢
+const toolbarZan = r => require.ensure([], () => r(require('./toolbar/toolbar')), 'toolbar')
 
 Vue.component('ys-header', header)
 Vue.component('ys-footer', footer)
@@ -43,3 +45,4 @@ Vue.component('ys-index-pic', indexPic)
 Vue.component('ys-list-desc', listDesc)
 Vue.component('ys-list-three-pic', listThreePic)
 Vue.component('ys-route-line', routeLine)
+Vue.component('ys-toolbar', toolbarZan)

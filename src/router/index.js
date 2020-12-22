@@ -57,7 +57,7 @@ const routes = [
         name: 'home',
         component: Home,
         meta: {
-            title: '首页',
+            title: '十四冬奥会',
             keepAlive: false,
         },
     },

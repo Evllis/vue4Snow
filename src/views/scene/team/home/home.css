@@ -4,3 +4,14 @@
 /*
     NOTE: font style
 */
+.scene-team-home {
+  padding-top: 4px;
+}
+.scene-team-home .new-title {
+  padding: 0 17px;
+  padding-top: 18px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  line-height: 15px;
+}

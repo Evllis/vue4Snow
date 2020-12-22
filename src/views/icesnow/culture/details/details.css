@@ -67,37 +67,3 @@
 .culture-details .details-wrap .details p:last-child {
   margin-bottom: 0;
 }
-.culture-details .details-wrap .toolbar {
-  padding-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 30px;
-}
-.culture-details .details-wrap .toolbar > div {
-  display: flex;
-  align-items: center;
-}
-.culture-details .details-wrap .toolbar > div.like {
-  margin-right: 11px;
-}
-.culture-details .details-wrap .toolbar > div.like .icon {
-  width: 16px;
-  height: 14px;
-  background-image: url('image/like@2x.png');
-}
-.culture-details .details-wrap .toolbar > div.like .num {
-  color: #7d7878;
-  font-size: 12px;
-  margin-left: 6px;
-}
-.culture-details .details-wrap .toolbar > div.share .icon {
-  width: 13px;
-  height: 15px;
-  background-image: url('image/share@2x.png');
-}
-.culture-details .details-wrap .toolbar .icon {
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}

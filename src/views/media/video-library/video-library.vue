@@ -28,6 +28,7 @@
                         title: '花滑国手故意抛摔女伴？圈内人：大概率是失平昌曾见证融洽',
                         author: '人民网',
                         date: '2020年12月15日',
+                        preload: 'none',
                         // height: '360',
                         // autoplay: true,
                         // muted: true,
@@ -46,7 +47,7 @@
                         sources: [{
                             type: "video/mp4",
                             // mp4
-                            src: "http://vjs.zencdn.net/v/oceans.mp4",
+                            src: "https://www.w3chack.com/vue/clips.vorwaerts-gmbh.de_big_buck_bunny.mp4",
                             // webm
                             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
                         }],

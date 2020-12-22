@@ -6,7 +6,6 @@
                     :href="item.link"
                     v-if="item.ischain"
                     class="link">
-                    <img :src="item.img" />
                     <img :src="item.img" :alt="item.title" :title="item.title" />
                 </a>
                 <router-link
